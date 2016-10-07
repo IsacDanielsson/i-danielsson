@@ -51,11 +51,23 @@ body {
 	font-family: 'Simplifica';
 }
 
+span {
+	margin-top: -5px;
+	background: linear-gradient(300deg, #F4D03F, #16A085, #56B4D3);
+	background-size: 600% 600%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	display: block;
+}
+
 .contact {
 	left: 0px;
 	top: 0px;
-	padding-top: 60px;
-	height: 190px;
+	padding-top: 100px;
+	height: 150px;
 	width: 300px;
 	background-color: rgba(0,0,0,0);
 	position: absolute;
@@ -83,14 +95,21 @@ body {
 	background-size: 50px;
 }
 
-}
-
-h1 {
+#menu {
+	z-index: 11;
+	position: absolute;
+	margin: 225px 300px;
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
 	background-color: #EEEEEE;
+	color: #ff0000;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-span {
-	margin-top: -5px;
+#menu i {
+	margin-top: 13px;
+	font-size: 25px;
 	background: linear-gradient(300deg, #F4D03F, #16A085, #56B4D3);
 	background-size: 600% 600%;
 	-webkit-animation: Gradient 15s ease infinite;
@@ -98,8 +117,58 @@ span {
 	animation: Gradient 15s ease infinite;
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
-	display: block;
 }
+
+#btn1 i, #btn2 i, #btn3 i {
+	margin-top: 10px;
+	font-size: 20px;
+	background: linear-gradient(300deg, #F4D03F, #16A085, #56B4D3);
+	background-size: 600% 600%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+#btn1 {
+	z-index: 8;
+	position: absolute;
+	margin: 230px 305px;
+	height: 40px;
+	width: 40px;
+	border-radius: 20px;
+	background-color: #EEEEEE;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#btn2 {
+	z-index: 9;
+	position: absolute;
+	margin: 230px 305px;
+	height: 40px;
+	width: 40px;
+	border-radius: 20px;
+	background-color: #EEEEEE;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#btn3 {
+	z-index: 10;
+	position: absolute;
+	margin: 230px 305px;
+	height: 40px;
+	width: 40px;
+	border-radius: 20px;
+	background-color: #EEEEEE;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#menu:hover {cursor:pointer;}
+#btn1:hover {cursor:pointer;}
+#btn2:hover {cursor:pointer;}
+#btn3:hover {cursor:pointer;}
+
 
 footer {
 	height: 20px;
@@ -147,14 +216,16 @@ footer a {
 
 @-webkit-keyframes button1 {
     	0%   {height: 20px; width: 20px; border-radius: 10px; background-color: rgba(0,0,0,0); top: 1000px;}
-    	70% {height: 20px; width: 20px; border-radius: 10px; background-color: #EEEEEE; top: 270px;}
-    	80% {height: 500px; width: 500px; border-radius: 240px; top: 50px;}
-	90% {height: 500px; width: 500px; border-radius: 250px; top: 50px;}
+    	50% {height: 20px; width: 20px; border-radius: 10px; background-color: #EEEEEE; top: 270px;}
+	80% {height: 500px; width: 500px; border-radius: 250px; top: 50px;}
     	100% {height: 500px; width: 800px; border-radius: 2px;}
 
 @keyframes button1 {
     	0%   {height: 20px; width: 20px; border-radius: 10px; background-color: rgba(0,0,0,0); top: 1000px;}
-    	70% {height: 20px; width: 20px; border-radius: 10px; background-color: #EEEEEE; top: 270px;}
-    	80% {height: 500px; width: 500px; border-radius: 240px; top: 50px;}
-	90% {height: 500px; width: 500px; border-radius: 250px; top: 50px;}
+    	50% {height: 20px; width: 20px; border-radius: 10px; background-color: #EEEEEE; top: 270px;}
+	80% {height: 500px; width: 500px; border-radius: 250px; top: 50px;}
     	100% {height: 500px; width: 800px; border-radius: 2px;}
+
+
+
+
