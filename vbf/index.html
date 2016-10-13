@@ -3,13 +3,29 @@
 	<head>
 		<title>Vincent Berglund foto</title>
 		<link href="style.css" type="text/css" rel="stylesheet">
+		<script>
+			var images=new Array('Assets/BGImages/head_sandwichman1.jpg','Assets/BGImages/head_sandwichman2.jpg','Assets/BGImages/head_sandwichman3.jpg');
+			var nextimage=0;
+			doSlideshow();
+
+			function doSlideshow(){
+    			if(nextimage>=images.length){nextimage=0;}
+    			$('.global-header')
+    			.css('background-image','url("'+images[nextimage++]+'")')
+    			.fadeIn(500,function(){
+       			setTimeout(doSlideshow,1000);
+    			});
+			}
+		</script>
 	</head>
 
 	<body>
-		<header><img id="logo" src="favicon.png"></img></header>
+		<header>
+			<h1>VB Foto</h1>
+		</header>
 
-		<div class="content">
-			<iframe class="imgur-album" width="100%" height="650" frameborder="0" src="http://imgur.com/a/QD9aG/embed"></iframe>
-		</div>
+		<video playsinline autoplay muted loop poster="bg.mp4" id="bgvid">
+    		<source src="bg.mp4" type="video/mp4">
+		</video>
 	</body>
 </html>
